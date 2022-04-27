@@ -86,7 +86,7 @@ class CrawlCheckStock:
             tempArr = []
 
             for cell in bodies:
-                tempArr.append(cell.string)
+                tempArr.append(cell.getText().strip())
 
             if len(tempArr) > 0:
                 x = tempArr[0]
